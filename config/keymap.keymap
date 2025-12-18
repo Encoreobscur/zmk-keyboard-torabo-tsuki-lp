@@ -21,11 +21,11 @@
 
         layer_0 {
             bindings = <
-&none      &none  &none  &none  &none  &none                         &none   &none  &none      &none     &none          &none
-&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                         &kp Y   &kp U  &kp I      &kp O     &kp P          &kp BACKSPACE
-&kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G  &none      &none       &kp H   &kp J  &kp K      &kp L     &kp SEMICOLON  &kp ENTER
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &mkp LCLK  &mkp RCLK   &kp N   &kp M  &kp COMMA  &kp DOT   &kp FSLH       &kp RIGHT_SHIFT
-&none      &none  &none  &none  &mo 1  &mo 2  &kp SPACE  &lt 1 BSPC  &tog 3  &none  &none      &kp RWIN  &kp RIGHT_ALT  &tog 4
+&none      &none  &none  &none  &none  &none                        &none  &none  &none      &none     &none          &none
+&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                        &kp Y  &kp U  &kp I      &kp O     &kp P          &kp BACKSPACE
+&kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G  &none      &none      &kp H  &kp J  &kp K      &kp L     &kp SEMICOLON  &kp ENTER
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &mkp LCLK  &mkp RCLK  &kp N  &kp M  &kp COMMA  &kp DOT   &kp FSLH       &kp RIGHT_SHIFT
+&none      &none  &none  &none  &mo 1  &mo 2  &kp SPACE  &to 0      &to 3  &none  &none      &kp RWIN  &kp RIGHT_ALT  &to 4
             >;
         };
 
@@ -61,7 +61,7 @@
 &none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &none
 &none  &none   &none   &none   &none   &none   &none  &none  &none   &none   &none   &kp F11  &kp F12  &none
 &none  &none   &none   &none   &none   &none   &none  &none  &none   &none   &none   &none    &none    &none
-&none  &none   &none   &none   &none   &none   &none  &none  &tog 0  &none   &none   &none    &none    &none
+&none  &none   &none   &none   &none   &none   &none  &none  &to 0   &none   &none   &none    &none    &none
             >;
         };
 
@@ -71,7 +71,7 @@
 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp KP_DOT       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tog 0
+&kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp KP_DOT       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 0
             >;
         };
     };
