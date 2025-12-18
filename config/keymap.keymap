@@ -3,7 +3,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 / {
@@ -22,11 +21,11 @@
 
         layer_0 {
             bindings = <
-&none      &none  &none  &none  &none  &none                         &none      &none  &none      &none    &none          &none
-&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                         &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BACKSPACE
-&kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G  &none      &none       &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp ENTER
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &mkp LCLK  &mkp RCLK   &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-&none      &none  &none  &none  &mo 1  &mo 2  &kp SPACE  &lt 1 BSPC  &kp ENTER  &none  &none      &none    &kp BSLH       &mo 3
+&none      &none  &none  &none  &none  &none                         &none   &none  &none      &none     &none          &none
+&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                         &kp Y   &kp U  &kp I      &kp O     &kp P          &kp BACKSPACE
+&kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G  &none      &none       &kp H   &kp J  &kp K      &kp L     &kp SEMICOLON  &kp ENTER
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &mkp LCLK  &mkp RCLK   &kp N   &kp M  &kp COMMA  &kp DOT   &kp FSLH       &kp RIGHT_SHIFT
+&none      &none  &none  &none  &mo 1  &mo 2  &kp SPACE  &lt 1 BSPC  &tog 3  &none  &none      &kp RWIN  &kp RIGHT_ALT  &tog 4
             >;
         };
 
@@ -58,21 +57,21 @@
 
         layer_3 {
             bindings = <
-&none  &none   &none   &none         &none         &none                     &none   &none   &none   &none     &none     &none
-&none  &kp F1  &kp F2  &kp F3        &kp F4        &kp F5                    &kp F6  &kp F7  &kp F8  &kp F9    &kp F10   &kp F11
-&none  &none   &none   &none         &none         &none       &none  &none  &none   &none   &none   &none     &kp UP    &kp F12
-&none  &none   &none   &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &none  &none  &none   &none   &none   &kp LEFT  &kp DOWN  &kp RIGHT
-&none  &none   &none   &none         &none         &none       &none  &none  &none   &none   &none   &none     &none     &none
+&none  &none   &none   &none   &none   &none                 &none   &none   &none   &none    &none    &none
+&none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &none
+&none  &none   &none   &none   &none   &none   &none  &none  &none   &none   &none   &kp F11  &kp F12  &none
+&none  &none   &none   &none   &none   &none   &none  &none  &none   &none   &none   &none    &none    &none
+&none  &none   &none   &none   &none   &none   &none  &none  &tog 0  &none   &none   &none    &none    &none
             >;
         };
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans           &trans           &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp KP_DOT       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tog 0
             >;
         };
     };
