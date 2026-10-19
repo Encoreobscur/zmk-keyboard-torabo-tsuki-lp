@@ -54,7 +54,7 @@
 &kp GRAVE         &kp N1                &kp N2                 &kp N3     &kp N4        &kp N5                                             &kp N6    &kp N7    &kp N8  &kp N9     &kp N0         &trans
 &kp LEFT_CONTROL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp PLUS      &kp EQUAL       &trans              &trans         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp SQT        &trans
 &kp LSHFT         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE  &kp ASTERISK  &kp UNDERSCORE  &kp LA(LEFT_ARROW)  &kp RA(RIGHT)  &kp HOME  &kp END   &trans  &trans     &kp BACKSLASH  &trans
-&trans            &trans                &trans                 &trans     &mo 4         &kp DEL         &kp DEL             &trans         &mo 5     &trans    &trans  &trans     &trans         &kp RA(PRINTSCREEN)
+&trans            &trans                &trans                 &trans     &mo 4         &kp DEL         &kp DEL             &trans         &mo 5     &trans    &trans  &trans     &trans         &kp RA(RG(PRINTSCREEN))
             >;
         };
 
